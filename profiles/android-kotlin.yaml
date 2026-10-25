@@ -1,0 +1,54 @@
+id: android-kotlin
+name: Android Kotlin & Jetpack Compose Developer
+description: Modern native Android mobile engineering workflow using Kotlin, Jetpack Compose, Coroutines/Flow, Room DB, dependency injection (Hilt), and robust testing architectures
+version: "1.0.0"
+skills:
+  - kotlin-coroutines-flow
+  - jetpack-compose-ui
+  - room-database
+  - hilt-dependency-injection
+  - retrofit-networking
+  - junit5-mockk
+  - unidirectional-data-flow
+  - viewmodel-state-management
+  - compose-recomposition-optimization
+  - gradle-build-cache
+  - review
+  - verification-before-completion
+guidelines:
+  - "Unidirectional Data Flow (UDF): Drive UI state through immutable StateFlow data streams emitted from ViewModels, ensuring events flow upward and state flows downward."
+  - "ViewModel state holding: Retain state across configuration changes within Android ViewModels; avoid passing Activity or Context references into ViewModel logic."
+  - "Compose recomposition optimization: Mark stable immutable data classes with @Immutable or @Stable, defer state reads to layout/draw phases, and use remember/derivedStateOf to prevent unnecessary recompositions."
+  - "Database isolation: Perform Room database operations strictly off the main thread using Coroutines with Dispatchers.IO, encapsulating queries in clean Repository interfaces."
+  - "Dependency injection: Enforce compile-time dependency injection using Hilt (@HiltAndroidApp, @AndroidEntryPoint) for modular, testable application architecture."
+profiles: []
+stages:
+  architecture-state:
+    - unidirectional-data-flow
+    - viewmodel-state-management
+    - kotlin-coroutines-flow
+    - lifecycle-aware-collection
+  ui-compose:
+    - jetpack-compose-ui
+    - compose-recomposition-optimization
+    - material3-theming-styling
+    - compose-navigation-destinations
+  persistence-networking:
+    - room-database
+    - retrofit-networking
+    - hilt-dependency-injection
+    - offline-first-synchronization
+  build-packaging:
+    - gradle-build-cache
+    - proguard-r8-minification
+    - android-lint-rules
+    - multi-module-project-structure
+  testing-qa:
+    - junit5-mockk
+    - turbine-flow-testing
+    - compose-ui-testing
+    - review
+    - verification-before-completion
+metadata:
+  tags: ["android", "kotlin", "jetpack-compose", "mobile", "room", "hilt", "coroutines", "retrofit"]
+  author: "QuirkSphere"
